@@ -6,7 +6,7 @@ const city='Francisco';
 console.log("Hi! I'm " + name +  "\n and I\'m from " + city);
 console.log('Hi! I\'m ' + name + '\n and I\'m from ' + city);
 //Template literal
-console.log(`Hi! I'm ${ name } 
+console.log(`Hi! I'm ${ name }
     and I'm form ${city}`);
 
 const message = `Hi! I'm  ${name} I'm from ' ${city}`;
