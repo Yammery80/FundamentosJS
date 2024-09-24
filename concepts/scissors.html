@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel y Tijeras</title>
+    <style>
+    body {
+        text-align: center;
+        padding: 10%;
+        background-color: #0c1e53;
+    }
+    p {
+        padding: 0%;
+        margin: auto;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 20px;
+        background-color: #f1ede3;
+        box-shadow: 2px 4px 50px #000000;
+        border:none;
+        border-radius: 10px;
+    }
+    .title {
+        color: #ffffff;
+    }
+    h1 {
+        color: #0c1e53;
+    }
+    .play {
+        grid-area: 1 / 1 / 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        background-color: #fb0505;  /* Color de fondo */
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .user { 
+        grid-area: 2 / 1 / 3 / 2; 
+    }
+    .answersmap { 
+        grid-area: 2 / 2 / 3 / 3; 
+    }
+    .winner { 
+        grid-area: 3 / 1 / 4 / 3; 
+    }
+    .user img, .answersmap img {
+            width: 200px;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+<h1 class="title">Piedra, papel y tijeras</h1>
+    <div class="content">
+        <div class="play">
+            <button>¡A Jugar!</button>
+        </div>
+        <div class="user">
+            <h1>Mi respuesta</h1>
+            <p class="useranswer"></p>
+            <img src="" id="imgUser" alt="Tu elección" width="200px">
+        </div>
+        <div class="answersmap">
+            <h1>Sistema</h1>
+            <p class="answermach"></p>
+            <img src="" id="imgCompu" alt="Elección del sistema" width="200px">
+        </div>
+        <div class="winner">
+            <h1>Resultado</h1>
+            <p class="winnertotal"></p>
+        </div>
+    </div>
+    <script src="../scissors.js"></script>
+</body>
+</html>
