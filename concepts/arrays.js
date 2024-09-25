@@ -55,3 +55,16 @@ for(let i =0; i < pairs.length; i++){
 for (num of pairs){
     console.log(num);
 }
+//trabajo de clase
+
+const gifts = ['cat', 'game', 'socks']
+
+function wrapping(gifts) {
+    const envueltos=[];
+    for(let gift of gifts){
+        const tapa ='*'.repeat(gift.length + 2);
+        envueltos.push(`${tapa}\n*${gift}*\n${tapa}`);
+    }
+    return envueltos;
+}
+const wrapped = wrapping(gifts)
