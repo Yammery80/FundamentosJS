@@ -1,4 +1,4 @@
-const btnPlay = document.querySelector('button'); // Apuntar al botón
+const btnPlay = document.querySelector('.playButton'); // Apuntar al botón
 const divMaq = document.querySelector('.answermach'); // Apuntar al div de la máquina
 const message = document.querySelector('.winnertotal'); // Apuntar al mensaje
 const imgUser = document.getElementById('imgUser'); // Apuntar a la imagen del usuario
