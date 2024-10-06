@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamic Box</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!--Caja-->
+<div class="box" id="box"><h1>Da click para cambiar</h1></div>
+<!--Configuradores-->
+<div class="controls">
+<div class="input-group">
+    <label for="height">Alto:</label>
+    <input type="range" name="height" id="height" min="50" max="300" value="80">
+</div>
+<div class="input-group">
+    <label for="width">Ancho:</label>
+    <input type="range" name="width" id="width" min="50" max="300" value="80">
+</div>
+<div class="input-group">
+    <label for="border">Borde:</label>
+    <input type="range" name="border" id="border" min="0" max="300" value="0">
+</div>
+<div class="input-group">
+    <label for="wborder">Ancho de Borde:</label>
+    <input type="range" name="wborder" id="wborder" min="0" max="30" value="10">
+</div>
+<div class="input-group">
+    <label for="shadowX">Sombra Horizontal:</label>
+    <input type="range" name="shadowX" id="shadowX" min="-50" max="50" value="10">
+</div>
+<div class="input-group">
+    <label for="shadowY">Sombra Vertical:</label>
+    <input type="range" name="shadowY" id="shadowY" min="-50" max="50" value="10">
+</div>
+<div class="input-group">
+    <label for="shadowBlur">Sombra Difuminada:</label>
+    <input type="range" name="shadowBlur" id="shadowBlur" min="0" max="50" value="5">
+</div>
+<div class="input-group">
+    <label for="tcolorChange">Color de fondo aleatorio:</label>
+    <button id="colorChange">Cambiar Color</button>
+</div>
+<div class="input-group">
+    <label for="bColChan">Color de Borde:</label>
+    <button id="bColChan">Cambiar Color</button>
+</div>
+<div class="input-group">
+    <label for="backgroundImage">Fondo de Imagen:</label>
+    <input type="file" id="backgroundImage" accept="image/*">
+</div>
+<label for="textColor">Cambia el color del texto:</label>
+<select id="textColor">
+    <option value="black">Negro</option>
+    <option value="white">Blanco</option>
+</select>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
