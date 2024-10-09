@@ -13,6 +13,8 @@ const div = document.querySelector('div');
 const message = document.querySelector('h1');
 const backgroundImageInput = document.getElementById('backgroundImage');
 const textColorSelector = document.getElementById('textColor');
+const transColor = document.getElementById('TransparentColor');
+
 // Función para actualizar el estilo de la caja
 function updateBox() {
     //constantes  de alto y ancho
@@ -24,11 +26,14 @@ function updateBox() {
     box.style.borderRadius = borderInput.value + 'px';
     box.style.borderWidth = wborderInput.value + 'px';
     box.style.boxShadow = `${shadowXInput.value}px ${shadowYInput.value}px ${shadowBlurInput.value}px rgba(0, 0, 0, 0.5)`;
+    box.style.opacity = transColor.value + '%';
 
-    //Ajustar tamaño de la letra dinpamicamente basado en las dimensiones del div
+    //Ajustar tamaño de la letra dinamicamente basado en las dimensiones del div
     const fontSize =Math.min(height, width) * 0.17; //Ajusta el 12% de la dimensión del div , pero más pequeña
     message.style.fontSize = fontSize + 'px';
 }
+
+
 
 // Declarar función de cambio de color
 const changeColor = () => {
@@ -108,7 +113,7 @@ function setBackgroundImage(){
         box.style.backgroundImage = `url(${reader.result})`;
     };
 
-    //Si se selecciona una iamgen, se carga
+    //Si se selecciona una imagen, se carga
     if (file){
         reader.readAsDataURL(file);
     }
@@ -120,6 +125,7 @@ function updateTextColor() {
     const selectedColor = textColorSelector.value; // Obtiene el valor seleccionado
     message.style.color = selectedColor; // Cambia el color del texto del mensaje
 }
+
 // Evento para escuchar cuando se cambie la opción en el selector
 textColorSelector.addEventListener('change', updateTextColor);
 // Visualizar los cambios en los inputs
@@ -130,3 +136,6 @@ wborderInput.addEventListener('input', updateBox);
 shadowXInput.addEventListener('input', updateBox);
 shadowYInput.addEventListener('input', updateBox);
 shadowBlurInput.addEventListener('input', updateBox);
+transColor.addEventListener('input', updateBox);
+degraColor.addEventListener('input', updateBox);
+

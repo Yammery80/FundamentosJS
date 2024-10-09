@@ -51,11 +51,16 @@
     <label for="backgroundImage">Fondo de Imagen:</label>
     <input type="file" id="backgroundImage" accept="image/*">
 </div>
+<div class="input-group">
 <label for="textColor">Cambia el color del texto:</label>
 <select id="textColor">
     <option value="black">Negro</option>
     <option value="white">Blanco</option>
 </select>
+</div>
+<div class="input-group">
+    <label for="TransparentColor">Transparencia:</label>
+    <input type="range" name="TransparentColor" id="TransparentColor" min="0" max="100" value="20">
 </div>
 <script src="./app.js"></script>
 </body>
