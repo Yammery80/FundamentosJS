@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dibujo con Canvas</title>
+    <title>Mamá y chancla voladora</title>
     <style>
         body{
             margin: 0;
@@ -15,7 +15,7 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
             background-color: black;
-            color: rgb(194, 74, 5);
+            color: rgb(255, 255, 255);
 
         }
         #lienzo{background-color: aliceblue;}
@@ -39,15 +39,56 @@
             color: rgb(0, 0, 0);
             text-decoration: none;
         }
+        .popup {
+    display: none; /* Ocultar el popup por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Ancho del popup */
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
     </style>
 </head>
 <body>
     <div class="container">
         <button><a href="../MenuGlobal/index.html">Inicio</a></button>
-        <h1>Mi dibujo con Canva y JavaScript</h1>
+        <h1>Mamá y chancla voladora</h1>
         <canvas id="lienzo" width="600" height="400"></canvas>
     </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>¡Colisión!</h2>
+            <p>Juego reiniciado.</p>
+            <button id="reiniciar-btn">Reiniciar Juego</button>
+        </div>
+    </div>    
     <script src="./app.js"></script>
 </body>
 </html>

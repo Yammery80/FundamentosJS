@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom right, blue, pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+}
+.container{
+align-items: center;
+text-align: center;
+padding: 10px;
+border-radius: 30px;
+box-shadow: 2px 2px 30px 10px rgb(47, 46, 46);
+background-color: rgb(255, 255, 255);
+}
+h4{
+    font-size: 19px;
+    margin: 5px;
+    padding: 0;
+}
+p{
+    font-size: 15px;
+    margin: 5px;
+    padding: 0;
+}
+
+button{
+    background: white;
+    color: black;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background: linear-gradient(to bottom right, blue, pink);
+    transition: transform 0.08s ease-in-out; /* Transición suave */
+    color: white;
+}
+button:active{
+    color: white;
+    background-color: rgb(29, 28, 30);
+}
+
+button a{
+    font-weight: 460;
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+}
+
+button a:hover{
+    color: white;
+    font-weight: 460;
+    border-bottom: none;
+}

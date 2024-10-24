@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Colors</title>
+    <title>BG Colors</title>
     <style>
         body{
             width: 100vw;
@@ -12,9 +12,31 @@
             place-items: center;
             color: #43aa22;
         }
+        button{
+            color: black;
+            background-color: white;
+            border-color: black;
+            padding: 5px;
+            margin: 0;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        button:hover{
+            background-color: rgb(0, 0, 0);
+            border-color: rgb(255, 255, 255);
+            color: white;
+        }
+        a:hover{
+            color: rgb(255, 255, 255);
+        }
     </style>
 </head>
 <body>
+    <button><a href="/MenuGlobal/index.html">Inicio</a></button>
     <button id="btnChange">Cambiar Color</button>
     <script src="../colorsbg/app.js"></script>
 </body>
